@@ -1,0 +1,27 @@
+[project]
+name = "powergym-api"
+version = "0.1.0"
+description = "Selfwork FastAPI: API REST della palestra PowerGym (path/query parameters, request body, validazione)"
+authors = [
+    {name = "Giuseppe Giannelli", email = "peppegiannelli@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "fastapi (>=0.115.0,<1.0.0)",
+    "uvicorn (>=0.30.0,<1.0.0)",
+    "pydantic[email] (>=2.0.0,<3.0.0)",
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=8.0.0,<10.0.0)",
+    "httpx (>=0.27.0,<1.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
